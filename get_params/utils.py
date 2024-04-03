@@ -17,14 +17,14 @@ def get_required(module):
     params = inspect.signature(module).parameters
     defaults = {p: params[p].default for p in params if p != "self"}
     
-    _args = {
+    _params = {
         "src": module.__qualname__,
         "required": [],
         "optional": []
     }
     for k, v in defaults.items():
         if v != inspect._empty:
-            _args["optional"].append(k)
+            _params["optional"].append(k)
         else:
-            _args["required"].append(k)
-    return _args
+            _params["required"].append(k)
+    return _params
