@@ -1,4 +1,4 @@
-# `get-args`
+# `get-params`
 this package allows you to fetch the arguments of a function from a simple search string, matching a function within a module.
 
 ## usage
