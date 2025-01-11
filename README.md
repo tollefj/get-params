@@ -20,7 +20,7 @@ Output:
 you can install the package using pip:
 
 ```bash
-pip install get-args
+pip install get-params
 ```
 
 or locally:
